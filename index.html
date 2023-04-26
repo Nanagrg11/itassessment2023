@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="NAMKHA">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="icon" type="image/x-icon" href="images/banner 8.jpg" sizes="40x40">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=The+Nautigal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <script src="https://kit.fontawesome.com/83266ccef2.js" crossorigin="anonymous"></script>
+</head>
+<body onload="slider()"> 
+    <div class="container">
+
+        <div style="width:100%;">
+            <section class="header">
+                <nav>
+                    <a href="index.html"><img src="images/nana logo.jpg"  alt="To Home"></a>
+                    <span>NABI</span>
+                    <div id="top">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="features.html">Products</a></li> 
+                            <li><a href="aboutus.html">About</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <a href="login.html" class="login" target="_blank"><button>Login</button></a>
+                </nav>
+            </section>
+        </div>
+        <div>
+            <div class="banner">
+                <div class="slider">
+                    <img src="images/banner 7.jpg" alt="los" id="sliderimg">
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="content">
+            <h2>We serve faster</h2>
+            <h3>and better.</h2>
+            <form action="#">
+                <input type="text" placeholder="Search foundation, skin items">
+                <button type="sumbit">search</button>
+            </form>
+        </div>
+        <div class="banner">
+            <img src="images/pic8.jpg" class="downloadimage"alt="app store download">
+        </div>
+        <div class="featured"></div>
+        <div class="featured-partner">
+            <h3>Featured partner</h3>
+            <div class="ourteam1">
+                <div class="subcontainer1">
+                    <div class="tcontent1">
+                        <img src="images/partner 2.jpg" alt="">
+                        <p>MAC Cosmetics, stylized as M·A·C, is a Canadian cosmetics manufacturer founded in Toronto in 1984 by Frank Toskan and Frank Angelo. The company is headquartered in New York City after becoming a subsidiary of Estée Lauder Companies in 1998.</p>
+                    </div>
+        
+                    <div class="tcontent1">
+                        <img src="images/partner3.jpg" alt="">
+                        <p> HADA japan is a japanese cosmetic brand which  motive is to make the world healthier place to live, and have come to Nepal to fulfill  same responsibility not only through  products but also through various socio-economic responsibilities”</p>
+                    </div>
+        
+                    <div class="tcontent1">
+                        <img src="images/partner4.jpg" alt="">
+                        <p>kiss beauty  is a professional OEM/ODM factory of beauty cosmetics which integrated with R&D.manufacturing,distrlbution and services in make up and skin care industries areas.</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </div>
+
+
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h3>Quciks Links <div class="underlin"><span></span></div></h3>
+                    <div class="flink">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="feature.html">Feature Products</a></li> 
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.hmtl">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>GET HELP <div class="underlin"><span></span></div></h3>
+                    <p>HOW TO ORDER?</p>
+                    <p>FAQS</p>
+                    <p>SUPPORT SERVICES</p>
+                </div>
+                <div class="col">
+                    <h3>CONTACT US <div class="underlin"><span></span></div></h3>
+                    <p>Kathmandu, Nepal</p>
+                    <p>manang, Nepal</p>
+                    <p>+977-909898980, +977-909898982</p> 
+                    <p><i class="fa-solid fa-envelope"></i> namkha890@gmail.com</p>
+                </div>
+                <div class="col">
+                    <h3>SERVICE HOUR <div class="underlin"><span></span></div></h3>
+                    <p id="time">24hrs </p>
+                    <div class="socialiocn">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p id="copyright">Copyright &copy; namkhagurung.com 2023 - All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        var sliderimg = document.getElementById("sliderimg")
+
+        var images = new Array("images/banner 6.jpg", "images/banner 5.jpg", "images/banner 2.jpg", "images/banner 8.jpg" );
+
+        var len = images.length;
+        var i = 0;
+
+        function slider(){
+            if(i > len-1){
+                i = 0;
+            }
+
+            sliderimg.src = images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    </script>
+
+   
+</body>
+</html>
